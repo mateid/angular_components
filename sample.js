@@ -16,7 +16,7 @@ myApp
   .component('toolbar', {
     templateUrl: 'toolbar.template.html',
     controller: function($state) {
-      this.name = 'Just a name';
+      this.name = 'controller!';
       this.navigate = function(routeName) {
         $stateProvider.go(routeName);
       }
