@@ -1,2 +1,2 @@
-# angular_components
-Just a simple demo of using angular material with angular components and ui-router routing.
+# Angular components
+Just a demo of using angular material with angular components and ui-router.

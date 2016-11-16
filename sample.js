@@ -14,12 +14,25 @@ myApp
     }
   })
   .component('toolbar', {
-    templateUrl: 'toolbar.template.html',
+    templateUrl: 'toolbar.tmpl.html',
     controller: function($state) {
       this.name = 'controller!';
       this.navigate = function(routeName) {
         $stateProvider.go(routeName);
       }
+    }
+  })
+  .component('toolbar', {
+    templateUrl: 'repeater.tmpl.html',
+    controller: function() {
+      this.items = [];
+      this.addItem = function() {
+        this.items.push('Another repeater item');
+      };
+      this.removeItem = function(item) {
+        var index = this.items.indexOf(item);
+        this.items.splice(index, 1);
+      };
     }
   });
 
