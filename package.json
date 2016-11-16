@@ -4,7 +4,7 @@
     "description": "Sample using angular 1.5 component",
     "main": "index.js",
     "scripts": {
-        "start": "./node_modules/http-server/bin/http-server",
+        "start": ".\\node_modules\\http-server\\bin\\http-server",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Matei Dorobantu",

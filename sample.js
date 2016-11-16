@@ -1,4 +1,4 @@
-var myApp = angular.module('sample', ['ngMaterial', 'ui.router']);
+var myApp = angular.module('sample', ['ngMaterial', 'ui.router', 'ngAnimate']);
 
 myApp
   .config(function($mdThemingProvider){
@@ -22,12 +22,14 @@ myApp
       }
     }
   })
-  .component('toolbar', {
+  .component('repeater', {
     templateUrl: 'repeater.tmpl.html',
     controller: function() {
-      this.items = [];
+      this.items = ['A repeater item','One more item','The last item'];
+      this.key = this.items.length;
       this.addItem = function() {
-        this.items.push('Another repeater item');
+        this.items.push('Another repeater item (' + this.key + ')');
+        this.key++;
       };
       this.removeItem = function(item) {
         var index = this.items.indexOf(item);
@@ -44,6 +46,6 @@ myApp.config(function($stateProvider) {
   }).state({
     name: 'about',
     url: '/about',
-    template: '<h3>Its the UI-Router hello world app!</h3>'
+    component: 'repeater'
   });
 });

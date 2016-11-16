@@ -1,0 +1,20 @@
+.list {
+    opacity: 1;
+}
+.list .ng-enter {
+    -webkit-transition: 0.55s;
+    transition: 0.55s;
+    opacity: 0;
+}
+.list .ng-enter-active {
+    opacity: 1;
+}
+
+.list .ng-leave {
+    -webkit-transition: 0.55s;
+    transition: 0.55s;
+    opacity: 1;
+}
+.list .ng-leave-active {
+    opacity: 0;
+}
