@@ -4,13 +4,13 @@
     "description": "Sample using angular 1.5 component",
     "main": "index.js",
     "scripts": {
-        "start": ".\\node_modules\\http-server\\bin\\http-server",
+        "start": "./node_modules/.bin/http-server",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Matei Dorobantu",
     "license": "ISC",
     "dependencies": {
-        "angular-ui-router": "^1.0.0-beta.3",
+        "angular-ui-router": "^1.0.0-rc.1",
         "http-server": "^0.9.0"
     }
 }
